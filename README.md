@@ -1,4 +1,4 @@
-# Library API
+# Library API 📚
 
 ### Project Setup
 - Create the database use `/library-api.sql`
@@ -20,9 +20,8 @@ This documentation will help you get familiar with the resources of the First no
 ### Get all books
 You can access the list of books by using the `/books` endpoint. 
 
+`GET: localhost:9000/books`
 ```json
-GET: localhost:9000/books 
-
 [
     {
         "id": 1,
@@ -31,16 +30,16 @@ GET: localhost:9000/books
         "edition": 1
     }
     {
-        ...
+        "...": "..."
     }
 ]
 ```
 
 ### Get a single book
 You can get a single book by using the `/books/book/{id}` endpoint.
-```json
-GET: localhost:9000/books/book/12
 
+`GET: localhost:9000/books/book/12`
+```json
 [
     {
         "id": 12,
@@ -52,12 +51,10 @@ GET: localhost:9000/books/book/12
 ```
 
 ### Add a new book
-You can add a new book by using `/books/add`
+You can add a new book by using `/books/add` endpoint. 
+
+`POST: localhost:9000/books/add`
 ```json
-POST: localhost:9000/books/add
-
-Content-Type: application/json
-
 {
     "title": "The Hunger Games",
     "author": "Suzanne Collins",
@@ -66,20 +63,24 @@ Content-Type: application/json
 ```
 
 ### Update a book
-You can update a book by using `/books/update/{id}`
+You can update a book by using `/books/update/{id}` endpoint. 
+
+`PUT: localhost:9000/books/update/14`
 ```json
-PUT: localhost:9000/books/update/14
-
-Content-Type: application/json
-
 {
     "author": "Jon Doe",
 }
 ```
 ### Delete a book
-You can delete a book by using `/books/delete/{id}`
-```json
-DELETE: localhost:9000/books/14
+You can delete a book by using `/books/delete/{id}` endpoint. 
+
+`DELETE: localhost:9000/books/delete/14`
 ```
+Response:
+
+The book was deleted!
+```
+### Usefull
+PUT and POST request use a request-body 'Content-Type: application/json'
 ## Author
 Github - [@migueweb](https://github.com/migueweb)
