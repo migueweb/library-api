@@ -12,7 +12,7 @@ $ npm run dev
 ## Documentation
 
 ### Introduction
-This documentation will help you get familiar with the resources of the First node.js API and show you how to make different queries, so that you can get the most out of it.
+This documentation will help you get familiar with the resources of the  **Library API** and show you how to make different queries, so that you can get the most out of it.
 
 #### Base URL
 `localhost:9000/`
