@@ -26,7 +26,7 @@ routes.get('/book/:id', (req, res) => {
 })
 
 /* Register new book */
-routes.post('/', (req, res) => {
+routes.post('/add', (req, res) => {
     req.getConnection((err, conn) => {
         if(err) return res.send(err)
 
@@ -39,7 +39,7 @@ routes.post('/', (req, res) => {
 })
 
 /* Delete book */
-routes.delete('/:id', (req, res) => {
+routes.delete('/delete/:id', (req, res) => {
     req.getConnection((err, conn) => {
         if(err) return res.send(err)
 
@@ -52,7 +52,7 @@ routes.delete('/:id', (req, res) => {
 })
 
 /* Update book */
-routes.put('/:id', (req, res) => {
+routes.put('/update/:id', (req, res) => {
     req.getConnection((err, conn) => {
         if(err) return res.send(err)
 
