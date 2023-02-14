@@ -32,7 +32,7 @@ app.use(express.json())
 app.get('/', (req, res) => {
     res.send('API working :) \n')
 })
-app.use('/api', routes)
+app.use('/books', routes)
 
 /***********************************************************/
 /* Server running                                          */
