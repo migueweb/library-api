@@ -75,12 +75,12 @@ You can update a book by using `/books/update/{id}` endpoint.
 You can delete a book by using `/books/delete/{id}` endpoint. 
 
 `DELETE: localhost:9000/books/delete/14`
+```json
+Response
+{
+	"status": "success",
+	"message": "The book was deleted"
+}
 ```
-Response:
-
-The book was deleted!
-```
-### Usefull
-PUT and POST request use a request-body 'Content-Type: application/json'
 ## Author
 Github - [@migueweb](https://github.com/migueweb)
