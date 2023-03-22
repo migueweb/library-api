@@ -1,11 +1,14 @@
 const express = require('express');
 const mysql = require('mysql2');
 const myconnection = require('express-myconnection');
+const cors = require('cors')
 
 const routes = require('./routes')
 const config = require('./config')
 
 const app = express();
+app.use(cors())
+
 app.set('port', process.envPORT || 9000)
 
 const dbOptions = {
