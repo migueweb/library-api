@@ -76,7 +76,6 @@ You can delete a book by using `/books/delete/{id}` endpoint.
 
 `DELETE: localhost:9000/books/delete/14`
 ```json
-Response
 {
 	"status": "success",
 	"message": "The book was deleted"
