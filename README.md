@@ -1,4 +1,4 @@
-# Library API 📚
+# Books data API 📚
 
 ### Project Setup
 - To create the database use `./library-api.sql` file
